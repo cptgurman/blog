@@ -34,6 +34,10 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Название</label>
                             <input type="text" name="title" class="form-control" placeholder="Введите название">
+                            @error('title')
+                                <div class="text-danger">Это поле необходимо для заполнения</div>
+                            @enderror
+
                         </div>
                     </div>
                     <!-- /.card-body -->
