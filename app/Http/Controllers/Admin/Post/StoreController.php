@@ -2,21 +2,22 @@
 
 namespace App\Http\Controllers\Admin\Post;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Post\StoreRequest;
+use Exception;
+use App\Models\Tag;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\Admin\Post\StoreRequest;
+use App\Http\Controllers\Admin\Post\BaseController;
 
-class StoreController extends Controller
+class StoreController extends BaseController
 {
     public function __invoke(StoreRequest $request)
     {
         $data = $request->validated();
-        $data['preview_image']  = Storage::put('/images', $data['preview_image']);
-        $data['main_image'] =   Storage::put('/images', $data['main_image']);
+        $this->service->store($data);
 
-        Post::firstOrCreate($data);
         return redirect()->route('admin.post.index');
     }
 }
