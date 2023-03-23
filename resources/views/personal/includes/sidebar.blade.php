@@ -58,33 +58,17 @@
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{ route('admin.user.index') }}" class="nav-link">
-                                    <i class="nav-icon fa-solid fa-users"></i>
+                                    <i class="nav-icon fa fa-heart"></i>
                                     <p>
-                                        Пользователи
+                                        Понравившиеся посты
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('admin.category.index') }}" class="nav-link">
-                                    <i class="nav-icon fa-solid fa-bars"></i>
+                                    <i class="nav-icon fa fa-comment"></i>
                                     <p>
-                                        Категории
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ route('admin.tag.index') }}" class="nav-link">
-                                    <i class="nav-icon fa-solid fa-tag"></i>
-                                    <p>
-                                        Тэги
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ route('admin.post.index') }}" class="nav-link">
-                                    <i class="nav-icon fa-solid fa-note-sticky"></i>
-                                    <p>
-                                        Посты
+                                        Комментарии
                                     </p>
                                 </a>
                             </li>
