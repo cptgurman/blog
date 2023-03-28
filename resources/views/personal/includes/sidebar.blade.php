@@ -57,7 +57,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="{{ route('admin.user.index') }}" class="nav-link">
+                                <a href="{{ route('personal.liked.index') }}" class="nav-link">
                                     <i class="nav-icon fa fa-heart"></i>
                                     <p>
                                         Понравившиеся посты
@@ -65,7 +65,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('admin.category.index') }}" class="nav-link">
+                                <a href="{{ route('personal.comment.index') }}" class="nav-link">
                                     <i class="nav-icon fa fa-comment"></i>
                                     <p>
                                         Комментарии
